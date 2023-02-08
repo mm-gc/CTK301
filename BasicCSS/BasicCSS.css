@@ -1,0 +1,26 @@
+h1 {
+    color:coral;
+    background-color: #00FF00
+}
+
+.bluetext {
+    color:blue;
+}
+
+#greenhead {
+    color:darkgreen;
+    background-color: red;
+}
+
+a {
+    color:orange;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #AAAAAA;
+}
+
+a:hover {
+    color:#00FF00
+}
