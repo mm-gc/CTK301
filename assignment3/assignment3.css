@@ -1,0 +1,52 @@
+/*layout*/
+body{
+    padding:15px;
+}
+
+ul.none{
+    list-style-type:none;
+    padding-left: 5px;
+}
+
+nav li{
+    padding-right: 20px;
+    float:left;
+}
+
+.container {
+    border: solid pink 3px;
+    padding: 10px 20px 10px 20px;
+}
+
+/*text*/
+h1 {
+    color:steelblue;
+    background-color: lightcyan;
+}
+h2 {
+    color:lightcoral;
+    background-color:blanchedalmond;
+}
+h3 {
+    color:orange;
+    background-color: lightgoldenrodyellow;
+}
+
+p{
+    color:midnightblue;
+}
+
+#sequences {
+    font-size:18px;
+}
+
+/*links*/
+a {
+    color:red
+}
+a:visited {
+    color:green
+}
+a:hover {
+    color:yellow
+}
