@@ -1,0 +1,87 @@
+header img{
+    width:40px;
+    position:relative;
+    top:10px;
+    right:5px;
+    margin:0;
+    filter: hue-rotate(-40deg) brightness(150%) grayscale(30%);
+}
+
+aside{
+    grid-column: span 2;
+    background-color: lightblue;
+    padding:30px;
+}
+
+aside h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(6, 62, 146);
+    border-bottom: 3px solid;
+    padding-bottom:5px;
+}
+
+aside p{
+    font-weight:bold;
+    font-family:Georgia, 'Times New Roman', Times, serif;
+    text-align:justify;
+}
+
+main {
+    padding-top:0;
+    grid-column: span 6;
+    margin:auto;
+
+}
+
+#three {
+    grid-template-columns: repeat(3, 1fr);
+    display: grid;
+    padding:25px;
+    gap:50px;
+}
+
+.nudibranch a, .nudibranch h2{
+    color:rgb(232, 143, 60);
+}
+
+.isopod a, .isopod h2{
+    color:teal;
+}
+
+.catfish a, .catfish h2{
+    color:rgb(127, 160, 60);
+}
+
+main h2{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: normal;
+    color: rgb(6, 62, 146);
+    border-bottom: 3px solid;
+    padding-bottom:5px;
+    margin-top:0px;
+}
+
+main p{
+    font-family:Georgia, 'Times New Roman', Times, serif;
+}
+
+main a{
+    font-weight:bold;
+    text-decoration: none;
+}
+main a:hover{
+    color:blue;
+}
+
+main img{
+    width:270px;
+    height:168px;
+}
+
+footer{
+    grid-column: span 6;
+    background-color: rgb(225, 128, 138);
+    border-top: 5px solid rgb(36, 68, 184);
+    padding:10px;
+}
