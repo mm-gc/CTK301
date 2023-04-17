@@ -1,0 +1,199 @@
+html, body{
+  padding:0;
+  margin:0;
+  height:100%;
+  overflow:hidden;
+  background-color: #F6F3F0;
+}
+
+body {
+  width:1600px;
+}
+
+#wrapper {
+  margin:auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+
+@font-face {
+  font-family: MagicRetro;
+  src: url(https://dl.dropbox.com/s/rpr8j3ff8bkm3wb/MagicRetro.ttf?);
+}
+
+@font-face{
+  font-family: PoppinsSemiBoldItalic;
+  src:url(https://dl.dropbox.com/s/xi5jct8ogk71e0d/Poppins-SemiBoldItalic.ttf?)
+}
+
+header {
+  justify-self:center;
+  grid-column: span 12;
+  font-family: MagicRetro;
+  font-size:115px;
+  line-height:135px;
+  color:#D055A6;
+  padding-bottom:25px;
+}
+
+
+p{
+  font-family:PoppinsSemiBoldItalic;
+  font-size:33px;
+}
+
+.designs{
+  grid-column: span 1;
+  position:relative;
+  height:0px;
+  background-color: grey;
+  top:290px;
+  left:273px;
+  color:#913A88;
+  transition: filter 0.5s;
+}
+.designs p{
+  position: relative;
+  bottom: 80px;
+  left:20px;
+}
+
+.designs a{
+  color:#7a4b75;
+  text-decoration: none;
+}
+
+.designs:hover{
+  filter:invert(1);
+}
+
+.art {
+  justify-self: right;
+  grid-column: span 2;
+  height:0px;
+  background-color: grey;
+  color:#3BA987;
+  position:relative;
+  left:150px;
+  top:20px;
+  transition: filter 0.5s;
+}
+
+.art p{
+  position: relative;
+  bottom: 80px;
+  left: 30px;
+}
+
+.art a{
+  color:#3BA987;
+  text-decoration: none;
+}
+
+.art:hover{
+  filter:invert(1);
+}
+
+
+main {
+  justify-self:center;
+  grid-column: span 6;
+}
+
+main img{
+  width:550px;
+}
+
+.editing {
+  grid-column: span 1;
+  color:#84AF4D;
+  height:0px;
+  background-color: grey;
+  position:relative;
+  top:170px;
+  right:80px;
+  transition: filter 0.5s;
+}
+
+.editing p{
+  position: relative;
+  left:100px;
+  bottom:70px;
+}
+.editing a{
+  color:#84AF4D;
+  text-decoration: none;
+}
+.editing:hover{
+  filter:invert(1);
+}
+
+aside {
+  grid-column: span 2;
+  position:relative;
+  top:400px;  
+}
+
+
+aside a{
+  color:#415BE0;
+  text-decoration: none;
+}
+
+aside p{
+  line-height: 0px;
+  text-align: center;
+  padding-bottom:1px;
+  position:relative;
+  top:20px;
+  color:#415BE0;
+  transition: filter 0.5s;
+}
+
+
+aside p:hover{
+  filter:invert(1);
+}
+
+.frame{
+  width:700px;
+  filter:invert (0);
+}
+
+.butterfly {
+  position:relative;
+  bottom:438px;
+  left:96px;
+  width:400px;
+}
+
+.pins {
+  position:relative;
+  bottom:735px;
+  left:90px;
+  width: 100px;
+}
+
+footer {
+  position:absolute;
+  font-size:42px;
+  left:30px;
+  bottom:20px;
+  letter-spacing: 5px;
+}
+
+footer a{
+  color:#D055A6;
+  text-decoration: none;
+}
+footer a:hover{
+  filter:drop-shadow(0px 0px 3px #ffc0ea);
+}
+
+.smaller {
+  font-size:35px;
+  position:relative;
+  bottom:3px;
+}

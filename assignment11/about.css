@@ -1,0 +1,77 @@
+html, body{
+    padding:0;
+    margin:0;
+    height:100%;
+    overflow:hidden;
+    background-color: #F6F3F0;
+}
+  
+body {
+    width:1600px;
+  }
+  
+#wrapper {
+    margin:auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+  }
+  
+@font-face {
+    font-family: MagicRetro;
+    src: url(https://dl.dropbox.com/s/rpr8j3ff8bkm3wb/MagicRetro.ttf?);
+  }
+  
+@font-face{
+    font-family: PoppinsSemiBoldItalic;
+    src:url(https://dl.dropbox.com/s/xi5jct8ogk71e0d/Poppins-SemiBoldItalic.ttf?)
+  }
+  
+aside {
+    grid-column: span 2;
+    position:relative;
+    height:400px;
+    bottom:290px;
+    right:420px;
+  }
+
+.frame{
+    width:690px;
+  }
+  
+.butterfly {
+    position:relative;
+    left:160px;
+    bottom:400px;
+    width:450px;
+}
+  
+.pins {
+    position:relative;
+    left:380px;
+    bottom:520px;
+    width: 200px;
+}
+
+
+header {
+    grid-column: span 5;
+    font-family: MagicRetro;
+    font-size:115px;
+    line-height:135px;
+    color:#415BE0;
+    padding-bottom:25px;
+    padding-left:100px;
+}
+
+main {
+    grid-column: span 12;
+    text-align: center;
+}
+
+main iframe {
+    box-shadow: 5px 5px 5px #415BE0;
+}
+  
+

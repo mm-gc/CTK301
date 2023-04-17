@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mmgc - home</title>
+	<link href="index.css" rel="stylesheet" type="text/css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+
+	<script type="text/javascript">
+		// <![CDATA[
+		var speed=100; // speed of wobbling, lower is faster
+		var height=3; // height of wobbling in pixels
+		var alink=""; // page to link text to (set to ="" for no link)
+		
+		/****************************
+		*    Wobbly Text Effect     *
+		*(c) 2003-6 mf2fm web-design*
+		*  http://www.mf2fm.com/rv  *
+		* DON'T EDIT BELOW THIS BOX *
+		****************************/
+		var wobtxt, wobble, wobcnt=0;
+		window.onload=function() { if (document.getElementById) {
+		  var i, wobli;
+		  wobble=document.getElementById("wobble");
+		  wobtxt=wobble.firstChild.nodeValue;
+		  while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+		  for (i=0; i<wobtxt.length; i++) {
+			wobli=document.createElement("span");
+			wobli.setAttribute("id", "wobb"+i);
+			wobli.style.position="relative";
+			wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+			if (alink) {
+			  wobli.style.cursor="pointer";
+			  wobli.onclick=function() { top.location.href=alink; }
+			}
+			wobble.appendChild(wobli);
+		  }
+		  setInterval("wobbler()", speed);
+		}}
+		
+		function wobbler() {
+		  for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+		  wobcnt++;
+		}
+		// ]]>
+		</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<div id="wobble">mmgc</div>
+		</header>
+
+		<nav class="designs"> 
+			<a href="#designs"><img src="Group 4.png">
+			<p>designs</a></p>
+		</nav>
+
+		<nav class="art">
+			<a href="#art"><img src="Group 1.png">
+			<p>art</a></p>
+		</nav>
+
+		<main>
+			<img src="Group 7.png" alt="Picture of a Petri Dish">
+		</main>
+
+		<nav class="editing"> 
+			<a href="#editing"><img src="Group 3.png">
+			<p>editing</a></p>
+		</nav>
+
+		<aside>
+			<a href="about.html"><p>about</p></a>
+			<br>
+			<img class="frame" src="wfl-mah.png" alt="Picture of a Framed, Pinned Butterfly">
+			<img class="butterfly" src="blue-butterfly-hi.png">
+			<img class="pins" src="pins.png">
+
+		</aside>
+
+		<footer>
+			<a href="mailto:mmgcprofessional@gmail.com"><i class="bi bi-envelope"></i></a>
+			<span class="smaller"><a href="#i.don't.have.instagram"><i class="bi bi-instagram"></i></a></span>
+			<span class="smaller"><a href="#linkedOut"><i class="bi bi-linkedin"></i></a></span>
+		</footer>
+
+	</div>
+</body>
+</html>
