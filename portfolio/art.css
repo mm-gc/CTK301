@@ -1,0 +1,98 @@
+html, body{
+    padding:0;
+    margin:0;
+    height:100%;
+    background-color: #F6F3F0;
+}
+  
+body {
+    width:1600px;
+  }
+  
+#wrapper {
+    margin:auto;
+    padding: 24px;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 24px;
+  }
+  
+@font-face {
+    font-family: MagicRetro;
+    src: url(https://dl.dropbox.com/s/rpr8j3ff8bkm3wb/MagicRetro.ttf?);
+  }
+  
+@font-face{
+    font-family: PoppinsSemiBoldItalic;
+    src:url(https://dl.dropbox.com/s/xi5jct8ogk71e0d/Poppins-SemiBoldItalic.ttf?)
+  }
+
+header {
+  grid-column: span 3;
+  font-family: MagicRetro;
+  font-size:115px;
+  line-height:135px;
+  color:#3BA987;
+  padding-bottom:25px;
+  padding-left:30px;
+  grid-template-columns: repeat(3, 1fr);
+  display:grid;
+  column-gap: 30px;
+  position:relative;
+  top:20px;
+}
+
+
+header i{
+  grid-column:span 1;
+  font-size:90px;
+}
+
+i.bi.bi-house{
+  color:#3BA987;
+  position:relative;
+  bottom:25px;
+  font-size:80px;
+}
+
+header a{
+  height:0;
+}
+
+header a:hover{
+  filter:invert(1);
+  height:90px;
+}
+
+i.bi.bi-arrow-90deg-up{
+  transform: scaleX(-1);
+  position:relative;
+  bottom:20px;
+}
+
+.wobble {
+  grid-column:span 3;
+}
+
+main {
+  padding-left:100px;
+  grid-column: span 9;
+}
+
+.grid-item {
+  width: 350px;
+}
+
+.grid-item img {
+  width:100%;
+}
+
+.grid-item--width2{ 
+  width:400px;
+}
+
+.grid-item--width2 img {
+  width:100%;
+}
+  
+
