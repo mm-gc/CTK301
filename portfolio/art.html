@@ -130,6 +130,28 @@
 
 
 <script>
+// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+
+// init Masonry
+var elem = document.querySelector('.grid');
+var msnry = new Masonry( elem, {
+  // options
+  itemSelector: '.grid-item',
+  columnWidth: 200
+});
+
+
+
+imagesLoaded( elem ).on( 'progress', function() {
+  // layout Masonry after each image loads
+  msnry.layout();
+});
+</script>
+
+
+</body>
+</html>
+
 var elem = document.querySelector('.grid');
 var msnry = new Masonry( elem, {
   // options
@@ -142,8 +164,3 @@ var msnry = new Masonry( elem, {
 var msnry = new Masonry( '.grid', {
   // options
 });
-</script>
-
-
-</body>
-</html>
