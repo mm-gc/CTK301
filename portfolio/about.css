@@ -2,13 +2,13 @@ html, body{
     padding:0;
     margin:0;
     height:100%;
-    overflow:hidden;
     background-color: #F6F3F0;
 }
   
 body {
-    width:1600px;
-  }
+  width:1600px;
+  height:1600px;
+ }
   
 #wrapper {
     margin:auto;
@@ -111,7 +111,32 @@ i.bi.bi-arrow-90deg-up{
 main {
   grid-column: span 12;
   text-align: center;
+  height:500px
 }
 
+.under {
+  position:relative;
+  width: 500px;
+  right:300px;
+  bottom:100px;
+}
+
+.paper {
+  position:relative;
+  bottom:850px;
+  left:280px;
+}
   
+.bio {
+  position:relative;
+  bottom:1970px;
+  left:840px;
+  width:600px;
+  height:1000px;
+  text-align:left;
+  font-family: PoppinsSemiBoldItalic;
+  font-size:24px;
+  line-height: 40.5px;
+  color:rgb(101, 73, 73);
+}
 

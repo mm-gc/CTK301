@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>mmgc - art</title>
 	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
 	<link href="art.css" rel="stylesheet" type="text/css">
 
@@ -49,18 +50,21 @@
 </head>
 <body>
 	<div id="wrapper">
+
+
+
 		<header>
 			<a href="index.html"><i class="bi bi-house"></i></a>
 			<div id="wobble">art</div>
 			<i class="bi bi-arrow-90deg-up"></i>
 		</header>
-		<main>
+		<aside>
 		<div class="grid">
-			<div class="grid-item"><img src="digitalemulation.png"></div>
+			<div class="grid-item"><a href="#two"><img src="digitalemulation.png"></a></div>
 			<div class="grid-item"><img src="chibis.png"></div>
 			<div class="grid-item"><img src="digitalpainting.jpg"></div>
 			<div class="grid-item"><img src="conceptsheet.png"></div>
-			<div class="grid-item" ><img src="dndconceptsheet.png"></div>
+			<div class="grid-item"><img src="dndconceptsheet.png"></div>
 			<div class="grid-item"><img src="characterdesignpalette.png"></div>
 			<div class="grid-item"><img src="traditionalemulation.png"></div>
 			<div class="grid-item"><img src="portraitsketch.png"></div>
@@ -70,8 +74,55 @@
 			<div class="grid-item"><img src="commission.png"></div>
 			<div class="grid-item"><img src="characterdesign.png"></div>
 		</div>
-		</main>
+	</aside>
 
+	<footer>
+
+		<a href="#exc"><button>View Academic Exercises</button></a>
+
+	</footer>
+
+	<a name="exc"><main>
+		<h1>Digital Painting Exercises</h1>
+
+		<a name="one">
+		<section>
+		<h2>Exercise 1: Composite Painting</h2>
+		<p>Skills Displayed: Ability to utilize existing images to create an original, stylized work
+		</section>
+		</a>
+
+		<a name="two">
+		<section>
+		<h2>Exercise 2: Emulate a digital artist</h2>
+		<p>Skills Displayed: Ability to incorporate sensibilities of digital artists
+		<p><figcaption>Digital Artist Emulated</figcaption><br>
+		<div class="compare">
+			<img src="blurryref.png"><img src="blueref.png">
+		</div>
+		<p><figcaption>My Emulation</figcaption><br>
+		<div class="compare">
+			<img src="digitalemulation.png">
+		</div>
+		</section>
+		</a>
+
+		<a name="three">
+		<section>
+		<h2>Exercise 3: Emulate a traditional artist</h2>
+		<p>Skills Displayed: Ability to incorporate sensibilities of traditional artists
+		</section>
+		</a>
+
+
+		<a name="four">
+		<section>
+		<h2>Exercise 4: Illustrate a song or poem</h2>
+		<p>Skills Displayed: Ability to create visually interesting, original art from a non-visual source
+		</section>
+		</a>
+		
+	</main></a>
 
 	</div>
 

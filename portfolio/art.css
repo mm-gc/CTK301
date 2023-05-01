@@ -74,7 +74,7 @@ i.bi.bi-arrow-90deg-up{
   grid-column:span 3;
 }
 
-main {
+aside {
   padding-left:100px;
   grid-column: span 9;
 }
@@ -95,4 +95,55 @@ main {
   width:100%;
 }
   
+main {
+  grid-column: span 12;
+  width:1000px;
+  padding:25px;
+  margin:auto;
+}
 
+p, h1, h2, figcaption, button{
+  font-family: PoppinsSemiBoldItalic;
+  
+}
+
+h2 {
+  border-bottom: 3px solid #3BA987;
+  padding-bottom:5px;
+}
+
+.compare {
+  display: flex;
+}
+
+.compare img {
+  width:350px;
+}
+
+section {
+  padding:5px;
+}
+
+figcaption {
+  font-size:larger;
+  color: #3BA987;
+}
+
+/*grid-column: 4 / span 8;*/
+
+footer {
+  margin:100px auto;
+  grid-column: span 12;
+}
+
+button {
+  color: #3BA987;
+  font-size: 25px;
+  padding:15px;
+  background-color: transparent;
+  border: 3px solid #3BA987;
+}
+
+button:hover {
+  filter:invert(1);
+}
