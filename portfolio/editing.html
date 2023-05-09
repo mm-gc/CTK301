@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>mmgc - editing</title>
+	<script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+	<script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.4/font/bootstrap-icons.css">
+	<link href="editing.css" rel="stylesheet" type="text/css">
+
+
+	<script type="text/javascript">
+		// <![CDATA[
+		var speed=100; // speed of wobbling, lower is faster
+		var height=3; // height of wobbling in pixels
+		var alink=""; // page to link text to (set to ="" for no link)
+		
+		/****************************
+		*    Wobbly Text Effect     *
+		*(c) 2003-6 mf2fm web-design*
+		*  http://www.mf2fm.com/rv  *
+		* DON'T EDIT BELOW THIS BOX *
+		****************************/
+		var wobtxt, wobble, wobcnt=0;
+		window.onload=function() { if (document.getElementById) {
+		  var i, wobli;
+		  wobble=document.getElementById("wobble");
+		  wobtxt=wobble.firstChild.nodeValue;
+		  while (wobble.childNodes.length) wobble.removeChild(wobble.childNodes[0]);
+		  for (i=0; i<wobtxt.length; i++) {
+			wobli=document.createElement("span");
+			wobli.setAttribute("id", "wobb"+i);
+			wobli.style.position="relative";
+			wobli.appendChild(document.createTextNode(wobtxt.charAt(i)));
+			if (alink) {
+			  wobli.style.cursor="pointer";
+			  wobli.onclick=function() { top.location.href=alink; }
+			}
+			wobble.appendChild(wobli);
+		  }
+		  setInterval("wobbler()", speed);
+		}}
+		
+		function wobbler() {
+		  for (var i=0; i<wobtxt.length; i++) document.getElementById("wobb"+i).style.top=Math.round(height*Math.sin(i+wobcnt))+"px"
+		  wobcnt++;
+		}
+		// ]]>
+		</script>
+</head>
+<body>
+	<div id="wrapper">
+		<header>
+			<a href="index.html"><i class="bi bi-house"></i></a>
+			<div id="wobble">editing</div>
+			<a href="designs.html"><i class="bi bi-arrow-right"></i></a>
+		</header>
+		<main>
+			<img class="puzzle" src="catoriginal.jpg" alt="Unedited picture of a cat">
+			<img class="puzzle" src="catedited.jpg" alt="Edited picture of a cat with added Christmas elements">
+			<p class="orig">original</p>
+			<p class="edit">edited</p>
+			<img class="choc" src="chocorig.jpg" alt="Unedited picture of homemade chocolates">
+			<img class="choc" src="chocedit.jpg" alt="Edited, cleaner picture of homemade chocoaltes ">
+			<p class="orig">original</p>
+			<p class="edit">edited</p>
+			<img class="fancy" src="catorig.png" alt="Unedited picture of two kittens">
+			<img class="fancy" src="catedit.jpg" alt="Edited picture of two kittens, with added royal elements and the 'Fancy Feast' logo">
+			<p class="orig">original</p>
+			<p class="edit">edited</p>
+			
+		</main>
+
+		<aside>
+			<img class="film" src="filmstrip.png" alt="Decorative strip of film">
+		</aside>
+
+	</div>
+
+	<script>
+		const lightbox = document.createElement('div')
+		lightbox.id = 'lightbox'
+		document.body.appendChild(lightbox)
+		
+		const images = document.querySelectorAll('img')
+		images.forEach(image => {
+		  image.addEventListener('click', e => {
+			lightbox.classList.add('active')
+			const img = document.createElement('img')
+			img.src = image.src
+			while (lightbox.firstChild) {
+			  lightbox.removeChild(lightbox.firstChild)
+			}
+			lightbox.appendChild(img)
+		  })
+		})
+		
+		lightbox.addEventListener('click', e => {
+		  if (e.target !== e.currentTarget) return
+		  lightbox.classList.remove('active')
+		})
+		
+		</script>
+
+
+</body>
+</html>

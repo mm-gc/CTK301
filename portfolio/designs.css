@@ -1,0 +1,143 @@
+html, body{
+  padding:0;
+  margin:0;
+  height:100%;
+  background-color: #F6F3F0;
+  overflow: hidden;
+}
+  
+body {
+  width:1600px;
+}
+  
+#wrapper {
+  margin:auto;
+  padding: 24px;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-column-gap: 24px;
+}
+  
+@font-face {
+  font-family: MagicRetro;
+  src: url(https://dl.dropbox.com/s/rpr8j3ff8bkm3wb/MagicRetro.ttf?);
+}
+  
+@font-face{
+  font-family: PoppinsSemiBoldItalic;
+  src:url(https://dl.dropbox.com/s/xi5jct8ogk71e0d/Poppins-SemiBoldItalic.ttf?)
+}
+
+header {
+  grid-column: span 3;
+  font-family: MagicRetro;
+  font-size:115px;
+  line-height:135px;
+  color:#913A88;
+  padding-bottom:25px;
+  padding-left:30px;
+  grid-template-columns: repeat(3, 1fr);
+  display:grid;
+  column-gap: 30px;
+  position:relative;
+  top:20px;
+  padding-right:0;
+  width:500px;
+}
+
+header i{
+  grid-column:span 1;
+  font-size:90px;
+}
+
+i.bi.bi-house{
+  color:#913A88;
+  position:relative;
+  bottom:25px;
+  font-size:80px;
+}
+
+header a{
+  height:0;
+}
+
+header a:hover{
+  filter:invert(1);
+  height:90px;
+}
+
+a i.bi.bi-arrow-right{
+ color:#913A88;
+  position:relative;
+  bottom:20px;
+}
+
+.wobble {
+  grid-column:span 1;
+}
+
+
+p, h1, h2, figcaption, button{
+  font-family: PoppinsSemiBoldItalic;
+  
+}
+
+main {
+  margin-top:30px;
+  grid-row-start: 2;
+  grid-column-end:12;
+  height:620px;
+  width:1200px;
+  overflow-x: scroll;
+  display:flex;
+  column-gap:50px;
+  padding:10px;
+
+}
+
+main img{
+  cursor:pointer;
+}
+
+aside {
+  grid-row-start:2;
+  width:0px;
+}
+
+aside img{
+  width:450px;
+  position:relative;
+  left:-50px;
+  top:40px;
+  filter:hue-rotate(140deg) contrast(150%);
+
+}
+
+img.light {
+  width:300px;
+  position:absolute;
+  top:-45px;
+  right:0;
+}
+
+#lightbox {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, .8);
+  display: none;
+}
+
+#lightbox.active {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#lightbox img {
+  max-width: 90%;
+  max-height: 80%;
+  padding: 4px;
+}
